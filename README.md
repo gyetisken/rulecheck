@@ -93,20 +93,55 @@ uv run rulecheck check --rules data/austin.rules.json \
 the corpus can be rebuilt from nothing rather than trusting whatever text file
 happens to be checked in.
 
-## What is wrong with it
+## Measuring it
 
-The table has visible errors and they are left visible. `LICENSE_REQUIRED` shows
-*12 months* for Austin and *90 days* for Nashville; those are periods belonging
-to other requirements that the matching pass filed in the wrong row. New Orleans
-shows *18 years* under `OWNER_MUST_OWN_UNIT`, which is the minimum age of the
-operator, not a fact about ownership.
+An extraction that looks right and is wrong is worse than one that fails loudly,
+so there is a number rather than an impression.
 
-All three are the same failure: a rule carries a number, and the number gets
-treated as the threshold for whichever requirement the rule landed under.
+Someone reads three sections of the Austin ordinance by hand and writes down
+every obligation it places on an owner. That list is the key. The extraction is
+then scored against it:
 
-The next piece of work is measuring that rather than patching it by hand. A
-hand-written answer key for one city, compared against what the model produced,
-turns "it looks mostly right" into a number that moves when the prompt changes.
+```
+section      expected  found  missed  unsupported
+4-23-32             5      5       0            1
+4-23-33             4      4       0            0
+4-23-34            10      8       2            0
+
+recall    17/19 = 89%
+precision 17/18 = 94%
+```
+
+```bash
+uv run rulecheck evaluate --city austin --verbose
+```
+
+Both numbers matter and they pull against each other. A missed requirement is a
+rule somebody breaks without knowing. An unsupported one sends somebody chasing
+a duty that does not exist.
+
+**The one it invented.** The ordinance says a licence *is valid for a maximum of
+two years*. The model recorded *the owner must renew at least every two years*.
+That is a reasonable inference and it is not what the text says, which is
+precisely what the prompt forbids. The real renewal duty lives two sections
+away, so the output is right by accident and wrong by method.
+
+**The two it missed.** One section lists three duties under one lead-in —
+obey the law, make sure guests obey it, apply mitigation measures where they
+apply. The model read that as a single requirement. Whether it is one or three
+is a judgement, and the key takes a side, which is what a key is for.
+
+### What the number does not cover
+
+The key was written against three of the twenty-two sections, so this is a
+sample, not a grade. Pairing the two lists is done by a model as well, which
+puts a model inside the measurement of a model — every pairing is printed with
+`--verbose` so it can be checked, but that is mitigation rather than a fix.
+
+The table on the comparison page has errors of its own that this does not
+touch: `LICENSE_REQUIRED` shows *12 months* for Austin because a rule carrying a
+number landed in the wrong row during matching. Extraction and matching need
+separate keys; only extraction has one so far.
 
 ## Stack
 

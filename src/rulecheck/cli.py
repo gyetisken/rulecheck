@@ -73,6 +73,19 @@ def _cmd_extract(args) -> int:
     return 0
 
 
+def _cmd_evaluate(args) -> int:
+    from .evaluate import report, score
+
+    load_dotenv()
+    scores = score(
+        Path(f"eval/{args.city}.key.json"),
+        Path(f"data/{args.city}.rules.json"),
+        verbose=args.verbose,
+    )
+    print(report(scores))
+    return 0
+
+
 def _cmd_compare(args) -> int:
     from .canonical import CANONICAL
     from .compare import load, matrix, unmapped
@@ -155,6 +168,13 @@ def main() -> None:
     c.add_argument("--rules", required=True)
     c.add_argument("--property", required=True)
     c.set_defaults(func=_cmd_check)
+
+    ev = sub.add_parser(
+        "evaluate", help="score the extraction against a hand-written key"
+    )
+    ev.add_argument("--city", default="austin")
+    ev.add_argument("--verbose", action="store_true")
+    ev.set_defaults(func=_cmd_evaluate)
 
     cp = sub.add_parser("compare", help="show the cities side by side")
     cp.set_defaults(func=_cmd_compare)
