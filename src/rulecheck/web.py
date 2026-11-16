@@ -74,6 +74,23 @@ button:hover { opacity:.88 }
   border-radius:var(--radius); padding:16px 18px }
 .count b { display:block; font-size:28px; letter-spacing:-.03em; font-variant-numeric:tabular-nums }
 .count span { font-size:13px; color:var(--muted) }
+.field.wide { flex:1 1 100%; max-width:380px }
+.field.submit { flex:0 0 auto; display:flex; align-items:flex-end; margin-bottom:18px }
+.unit { color:var(--faint); text-transform:none; letter-spacing:0 }
+.hint { color:var(--faint); font-size:13px; margin:4px 0 16px }
+.verdict { font-size:19px; line-height:1.55; margin:0 0 34px; max-width:62ch }
+.verdict b { font-weight:600; display:block; margin-bottom:4px }
+.cause { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--line);
+  border-radius:10px; padding:16px 20px; margin-bottom:10px }
+.cause.violated { border-left-color:var(--bad) }
+.cause.satisfied { border-left-color:var(--ok) }
+.cause.unknown { border-left-color:var(--idk) }
+.cause-head { display:flex; justify-content:space-between; align-items:baseline; gap:16px }
+.cause-title { font-size:16px; font-weight:550 }
+.cause-count { color:var(--faint); font-size:13px; white-space:nowrap }
+.cause details { border:0; padding:0; margin:10px 0 0 }
+.cause summary { font-size:13px }
+.cause .rule { margin-top:10px }
 .count.bad b { color:var(--bad) } .count.ok b { color:var(--ok) } .count.idk b { color:var(--idk) }
 
 .group { margin-bottom:30px }
@@ -151,8 +168,42 @@ def _page(body: str, active: str) -> HTMLResponse:
     )
 
 
+CITY_NAMES = {
+    "austin": "Austin, Texas",
+    "denver": "Denver, Colorado",
+    "nashville": "Nashville, Tennessee",
+    "new-orleans": "New Orleans, Louisiana",
+    "san-diego": "San Diego, California",
+}
+
+# Each question is phrased the way the ordinance asks it, not the way the
+# database stores it. "owner_occupies" means nothing to someone with a spare
+# room to rent; "Do you live in this property yourself?" does.
+QUESTIONS = [
+    ("has_license", "Do you already hold a rental licence or permit?"),
+    ("owner_owns", "Do you own this property?"),
+    ("owner_occupies", "Do you live in it yourself?"),
+    ("has_insurance", "Do you carry liability insurance on it?"),
+    ("registered_for_tax", "Are you registered to collect lodging tax?"),
+]
+
+NUMBERS = [
+    ("units_operated", "How many rentals do you run?", "units", "e.g. 1"),
+    (
+        "feet_to_nearest_rental",
+        "Distance to your nearest other rental",
+        "feet",
+        "e.g. 1400",
+    ),
+]
+
+
 def _cities() -> list[str]:
     return sorted(p.name.replace(".rules.json", "") for p in DATA.glob("*.rules.json"))
+
+
+def _label(city: str) -> str:
+    return CITY_NAMES.get(city, city.replace("-", " ").title())
 
 
 def _bool_field(name: str, label: str, value: str = "") -> str:
@@ -160,10 +211,11 @@ def _bool_field(name: str, label: str, value: str = "") -> str:
         return " selected" if value == v else ""
 
     return (
-        f"<div class='field'><label>{label}</label><select name='{name}'>"
-        f"<option value=''{sel('')}>not answered</option>"
-        f"<option value='yes'{sel('yes')}>yes</option>"
-        f"<option value='no'{sel('no')}>no</option>"
+        f"<div class='field'><label for='{name}'>{label}</label>"
+        f"<select id='{name}' name='{name}'>"
+        f"<option value=''{sel('')}>Not sure yet</option>"
+        f"<option value='yes'{sel('yes')}>Yes</option>"
+        f"<option value='no'{sel('no')}>No</option>"
         f"</select></div>"
     )
 
@@ -171,28 +223,26 @@ def _bool_field(name: str, label: str, value: str = "") -> str:
 def _form(city: str = "", form: dict | None = None) -> str:
     f = form or {}
     options = "".join(
-        f"<option value='{c}'{' selected' if c == city else ''}>{c}</option>"
+        f"<option value='{c}'{' selected' if c == city else ''}>{_label(c)}</option>"
         for c in _cities()
     )
+    booleans = "".join(_bool_field(n, q, f.get(n, "")) for n, q in QUESTIONS)
+    numbers = "".join(
+        f"<div class='field'><label for='{n}'>{q} <span class='unit'>({u})</span></label>"
+        f"<input id='{n}' name='{n}' type='number' min='0' placeholder='{ph}' "
+        f"value='{f.get(n, '')}'></div>"
+        for n, q, u, ph in NUMBERS
+    )
     return f"""
-    <form method="post" action="/check">
-      <div class="row">
-        <div class="field"><label>City</label><select name="city">{options}</select></div>
-        <div class="field"><label>Units operated</label>
-          <input name="units_operated" type="number" min="0" value="{f.get("units_operated", "")}"></div>
-        <div class="field"><label>Feet to nearest rental</label>
-          <input name="feet_to_nearest_rental" type="number" min="0" value="{f.get("feet", "")}"></div>
+    <form class="panel" method="post" action="/check">
+      <div class="field wide"><label for="city">Which city is the property in?</label>
+        <select id="city" name="city">{options}</select></div>
+      <div class="row">{booleans}</div>
+      <div class="row">{numbers}
+        <div class="field submit"><button>Check the rules</button></div>
       </div>
-      <div class="row">
-        {_bool_field("has_license", "Operator licence", f.get("has_license", ""))}
-        {_bool_field("owner_owns", "Owner owns the unit", f.get("owner_owns", ""))}
-        {_bool_field("owner_occupies", "Owner lives there", f.get("owner_occupies", ""))}
-      </div>
-      <div class="row">
-        {_bool_field("has_insurance", "Insurance", f.get("has_insurance", ""))}
-        {_bool_field("registered_for_tax", "Registered for tax", f.get("registered_for_tax", ""))}
-        <div class="field" style="display:flex;align-items:flex-end"><button>Check</button></div>
-      </div>
+      <p class="hint">Leave anything you are unsure about on <b>Not sure yet</b>.
+      Unanswered is treated as unanswered, never as a breach.</p>
     </form>"""
 
 
@@ -200,35 +250,103 @@ def _tri(value: str | None) -> bool | None:
     return {"yes": True, "no": False}.get(value or "")
 
 
-def _render(findings: list[Finding]) -> str:
-    counts = {s: sum(1 for f in findings if f.status is s) for s in Status}
-    out = (
-        "<div class='counts'>"
-        f"<div class='count'><b>{counts[Status.VIOLATED]}</b><span>missing</span></div>"
-        f"<div class='count'><b>{counts[Status.UNKNOWN]}</b><span>need a human</span></div>"
-        f"<div class='count'><b>{counts[Status.SATISFIED]}</b><span>satisfied</span></div>"
+# Austin states the licence requirement in twelve separate places. Twelve
+# identical rows is accurate and unreadable, so the page groups by the fact
+# that decided them and shows the rules themselves only on request.
+CAUSES = {
+    ("violated", "license"): "You do not have a licence or permit",
+    ("violated", "ownership"): "You do not own the property",
+    ("violated", "owner_occupancy"): "You do not live in the property",
+    ("violated", "insurance"): "You do not carry the required insurance",
+    ("violated", "tax"): "You are not registered for lodging tax",
+    ("violated", "unit_cap"): "You run more rentals than this city allows",
+    ("violated", "distance"): "Your rentals are closer together than allowed",
+    ("unknown", "license"): "You did not answer the licence question",
+    ("unknown", "ownership"): "You did not answer the ownership question",
+    ("unknown", "owner_occupancy"): "You did not answer whether you live there",
+    ("unknown", "insurance"): "You did not answer the insurance question",
+    ("unknown", "tax"): "You did not answer the tax question",
+    (
+        "unknown",
+        "unit_cap",
+    ): "This city measures its limit in a way the checker cannot apply",
+    ("unknown", "distance"): "You did not give a distance to your nearest rental",
+    ("unknown", "other"): "These have to be read by a person",
+}
+
+
+def _cause(finding: Finding) -> str:
+    key = (finding.status.value, finding.rule.kind)
+    if key in CAUSES:
+        return CAUSES[key]
+    return (
+        "Already satisfied" if finding.status is Status.SATISFIED else "Needs a person"
+    )
+
+
+def _verdict(counts: dict, city: str) -> str:
+    bad, idk = counts[Status.VIOLATED], counts[Status.UNKNOWN]
+    if bad:
+        return (
+            f"<p class='verdict'><b>You are not clear to rent in {city} yet.</b> "
+            f"{bad} of the requirements in the ordinance are not met, and {idk} more "
+            "cannot be settled without a person.</p>"
+        )
+    if counts[Status.SATISFIED]:
+        return (
+            f"<p class='verdict'><b>Nothing you told us breaks a rule in {city}.</b> "
+            f"{idk} requirements still need a person to read them.</p>"
+        )
+    return (
+        f"<p class='verdict'><b>Not enough answers yet.</b> Every one of the "
+        f"{idk} requirements in {city} is waiting on something you have not said.</p>"
+    )
+
+
+def _block(title: str, items: list[Finding], status: Status) -> str:
+    rules = "".join(
+        f"<div class='rule {status.value}'><div>{f.rule.requirement}</div>"
+        f"<div class='sec'>{f.rule.section}</div>"
+        + (
+            f"<p class='quote'>{f.rule.quote.strip()[:220]}</p>"
+            if status is Status.VIOLATED
+            else ""
+        )
+        + "</div>"
+        for f in items
+    )
+    n = len(items)
+    word = "rule" if n == 1 else "rules"
+    return (
+        f"<div class='cause {status.value}'>"
+        f"<div class='cause-head'><span class='cause-title'>{title}</span>"
+        f"<span class='cause-count'>{n} {word}</span></div>"
+        f"<details><summary>Show the {word}</summary>{rules}</details>"
         "</div>"
     )
-    for status in (Status.VIOLATED, Status.UNKNOWN, Status.SATISFIED):
+
+
+def _render(findings: list[Finding], city: str) -> str:
+    counts = {s: sum(1 for f in findings if f.status is s) for s in Status}
+    out = _verdict(counts, city)
+
+    sections = [
+        (Status.VIOLATED, "What is missing"),
+        (Status.UNKNOWN, "What nobody has answered yet"),
+        (Status.SATISFIED, "What you already meet"),
+    ]
+    for status, heading in sections:
         group = [f for f in findings if f.status is status]
         if not group:
             continue
-        by_reason: dict[str, list[Finding]] = {}
+        causes: dict[str, list[Finding]] = {}
         for f in group:
-            by_reason.setdefault(f.reason, []).append(f)
-        for reason, items in by_reason.items():
-            out += f"<div class='group'><p class='reason'>{status.value} &middot; {reason}</p>"
-            for f in items:
-                quote = (
-                    f"<p class='quote'>{f.rule.quote.strip()[:220]}</p>"
-                    if status is Status.VIOLATED
-                    else ""
-                )
-                out += (
-                    f"<div class='rule {status.value}'><span class='sec'>{f.rule.section}</span>"
-                    f"<div>{f.rule.requirement}</div>{quote}</div>"
-                )
-            out += "</div>"
+            causes.setdefault(_cause(f), []).append(f)
+        out += f"<h2>{heading}</h2>"
+        out += "".join(
+            _block(title, items, status)
+            for title, items in sorted(causes.items(), key=lambda kv: -len(kv[1]))
+        )
     return out
 
 
@@ -382,8 +500,8 @@ def run_check(
         "feet": feet_to_nearest_rental,
     }
     return _page(
-        f"<h2>{city.replace('-', ' ').title()}</h2>"
+        f"<h2>{_label(city)}</h2>"
         + _form(city, submitted)
-        + _render(check(rules, prop)),
+        + _render(check(rules, prop), _label(city)),
         "/",
     )
