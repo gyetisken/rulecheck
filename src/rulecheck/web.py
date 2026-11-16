@@ -91,6 +91,10 @@ button:hover { opacity:.88 }
 .cause details { border:0; padding:0; margin:10px 0 0 }
 .cause summary { font-size:13px }
 .cause .rule { margin-top:10px }
+.verdict i { font-style:normal; font-weight:550 }
+details.rest { margin-top:34px }
+details.rest > summary { font-size:14px; color:var(--muted) }
+details.rest h2 { margin:30px 0 12px }
 .count.bad b { color:var(--bad) } .count.ok b { color:var(--ok) } .count.idk b { color:var(--idk) }
 
 .group { margin-bottom:30px }
@@ -284,31 +288,35 @@ def _cause(finding: Finding) -> str:
     )
 
 
+def _causes(findings: list[Finding]) -> dict[str, list[Finding]]:
+    out: dict[str, list[Finding]] = {}
+    for f in findings:
+        out.setdefault(_cause(f), []).append(f)
+    return dict(sorted(out.items(), key=lambda kv: -len(kv[1])))
+
+
 def _verdict(findings: list[Finding], city: str) -> str:
-    bad = sum(1 for f in findings if f.status is Status.VIOLATED)
-    ask = sum(1 for f in findings if f.blocked_on is Blocked.ANSWER)
-    human = sum(1 for f in findings if f.blocked_on is Blocked.HUMAN)
+    """Lead with the blockers, by name, and say nothing else.
 
-    if bad:
-        head = f"You are not clear to rent in {city} yet."
-        body = f" {bad} requirement{'s are' if bad != 1 else ' is'} not met."
-    elif ask or human:
-        head = f"Nothing you told us breaks a rule in {city}."
-        body = ""
+    An earlier version opened with three sentences of arithmetic. Someone with a
+    spare room does not want a census of the ordinance, they want to know what is
+    standing in their way, so the headline names it and the counting moves to the
+    bottom of the page where it belongs.
+    """
+    bad = [f for f in findings if f.status is Status.VIOLATED]
+    if not bad:
+        return (
+            f"<p class='verdict'><b>Nothing you told us breaks a rule in {city}.</b>"
+            "</p>"
+        )
+
+    causes = list(_causes(bad))
+    if len(causes) == 1:
+        detail = f"One thing is in the way: <i>{causes[0].lower()}</i>."
     else:
-        head = f"Nothing to check in {city} yet."
-        body = ""
-
-    if ask:
-        body += (
-            f" {ask} more depend{'' if ask != 1 else 's'} on a question you left blank."
-        )
-    if human:
-        body += (
-            f" A further {human} cannot be decided by any program and need "
-            "a person to read them."
-        )
-    return f"<p class='verdict'><b>{head}</b>{body}</p>"
+        listed = ", ".join(c.lower() for c in causes[:-1])
+        detail = f"{len(causes)} things are in the way: <i>{listed}</i>, and <i>{causes[-1].lower()}</i>."
+    return f"<p class='verdict'><b>You cannot rent this in {city} yet.</b>{detail}</p>"
 
 
 def _block(title: str, items: list[Finding], status: Status) -> str:
@@ -328,55 +336,56 @@ def _block(title: str, items: list[Finding], status: Status) -> str:
     return (
         f"<div class='cause {status.value}'>"
         f"<div class='cause-head'><span class='cause-title'>{title}</span>"
-        f"<span class='cause-count'>{n} {word}</span></div>"
+        f"<span class='cause-count'>{n} {word} in the ordinance</span></div>"
         f"<details><summary>Show the {word}</summary>{rules}</details>"
         "</div>"
     )
 
 
-def _section(heading: str, note: str, group: list[Finding], status: Status) -> str:
-    if not group:
+def _rest(findings: list[Finding]) -> str:
+    """Everything that is not a blocker, folded away behind one line."""
+    groups = [
+        (
+            "waiting on an answer you have not given",
+            [f for f in findings if f.blocked_on is Blocked.ANSWER],
+            Status.UNKNOWN,
+        ),
+        (
+            "left to a person, because no program can decide them",
+            [f for f in findings if f.blocked_on is Blocked.HUMAN],
+            Status.UNKNOWN,
+        ),
+        (
+            "already met",
+            [f for f in findings if f.status is Status.SATISFIED],
+            Status.SATISFIED,
+        ),
+    ]
+    groups = [(label, items, status) for label, items, status in groups if items]
+    if not groups:
         return ""
-    causes: dict[str, list[Finding]] = {}
-    for f in group:
-        causes.setdefault(_cause(f), []).append(f)
-    blocks = "".join(
-        _block(title, items, status)
-        for title, items in sorted(causes.items(), key=lambda kv: -len(kv[1]))
+
+    total = sum(len(items) for _, items, _ in groups)
+    summary = "; ".join(f"{len(items)} {label}" for label, items, _ in groups)
+    body = "".join(
+        f"<h2>{label[0].upper() + label[1:]}</h2>"
+        + "".join(
+            _block(title, rules, status) for title, rules in _causes(items).items()
+        )
+        for label, items, status in groups
     )
-    return f"<h2>{heading}</h2><p class='lead'>{note}</p>{blocks}"
+    return (
+        f"<details class='rest'><summary>The other {total} rules: {summary}.</summary>"
+        f"{body}</details>"
+    )
 
 
 def _render(findings: list[Finding], city: str) -> str:
-    return (
-        _verdict(findings, city)
-        + _section(
-            "Missing",
-            "The ordinance requires these and your answers say you do not have them.",
-            [f for f in findings if f.status is Status.VIOLATED],
-            Status.VIOLATED,
-        )
-        + _section(
-            "Waiting on you",
-            "Answer the question above and these settle themselves.",
-            [f for f in findings if f.blocked_on is Blocked.ANSWER],
-            Status.UNKNOWN,
-        )
-        + _section(
-            "Needs a person",
-            "No answer you could give would settle these. Quiet hours, habitability "
-            "and how fast a local contact responds are judgements, not comparisons, "
-            "so the program hands them over instead of guessing.",
-            [f for f in findings if f.blocked_on is Blocked.HUMAN],
-            Status.UNKNOWN,
-        )
-        + _section(
-            "Already met",
-            "Your answers satisfy these.",
-            [f for f in findings if f.status is Status.SATISFIED],
-            Status.SATISFIED,
-        )
+    bad = [f for f in findings if f.status is Status.VIOLATED]
+    blockers = "".join(
+        _block(title, items, Status.VIOLATED) for title, items in _causes(bad).items()
     )
+    return _verdict(findings, city) + blockers + _rest(findings)
 
 
 @app.get("/compare", response_class=HTMLResponse)

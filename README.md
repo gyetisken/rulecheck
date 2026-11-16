@@ -49,13 +49,21 @@ impossible to test.
 
 ## Silence is not a no
 
-Each rule resolves to satisfied, violated, or unknown, and the third one is the
-reason the project exists. If the licence question is left blank, that is
-reported as unanswered. If a rule cannot be checked mechanically at all — most
-noise and nuisance rules cannot — it is handed to a person.
+![Checking one property](docs/check.png)
 
-Submitting the form with nothing filled in returns zero violations and thirty
-questions, which is the honest answer.
+Each rule resolves to satisfied, violated or unknown, and the third one is the
+reason the project exists. Submitting the form with nothing filled in returns
+zero violations, not thirty, because nobody has said anything yet.
+
+Unknown is also split in two, which matters more than it sounds. One kind you
+can clear by answering a question. The other no answer will ever settle: whether
+noise carries past the property line, whether the place is habitable, whether a
+local contact really turns up within two hours. Those are judgements, so they
+are handed to a person rather than guessed at.
+
+Austin states the licence requirement in twelve separate places, so a property
+without one fails twelve rules. The page says *you do not have a licence* once,
+and keeps the twelve behind a toggle for anyone who wants them.
 
 ## Running it
 
