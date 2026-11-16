@@ -169,9 +169,9 @@ def report(scores: list[SectionScore]) -> str:
     lines += [
         "",
         f"recall    {found}/{expected} = {found / expected:.0%}"
-        "   of the obligations in the key, this many were found",
+        + "   of the obligations in the key, this many were found",
         f"precision {found}/{produced} = {found / produced:.0%}"
-        "   of what the model produced, this much is in the key",
+        + "   of what the model produced, this much is in the key",
     ]
     if missed:
         lines += ["", "Missed:"] + [f"  - {m}" for s in scores for m in s.missed]
