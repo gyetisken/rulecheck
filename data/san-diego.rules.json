@@ -1,0 +1,404 @@
+{
+  "rules": [
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must hold a valid short-term residential occupancy license for the dwelling unit.",
+      "section": "510.0104(a)(1)",
+      "quote": "A license is required for all short-term residential occupancy.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "unit_cap",
+      "requirement": "Owner may not hold more than one license at a time.",
+      "section": "510.0104(a)(2)",
+      "quote": "A host may only hold one license at a time.",
+      "value": 1.0,
+      "unit": "units",
+      "canonical_id": "MAX_UNITS_PER_OPERATOR"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "unit_cap",
+      "requirement": "Owner may not operate more than one dwelling unit as a short-term rental in the city at a time.",
+      "section": "510.0104(a)(3)",
+      "quote": "A host may not operate more than one dwelling unit for short-term residential occupancy at a time within the City of San Diego.",
+      "value": 1.0,
+      "unit": "units",
+      "canonical_id": "MAX_UNITS_PER_OPERATOR"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must obtain a Tier One License to rent for an aggregate of 20 days or less per calendar year.",
+      "section": "510.0104(b)(1)",
+      "quote": "A Tier One License is required for home share or whole home short-\nterm residential occupancy for an aggregate total of 20 days or less per\ncalendar year.",
+      "value": 20.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must use the dwelling unit as the owner's primary residence for a Tier One home share.",
+      "section": "510.0104(b)(2)",
+      "quote": "Home share with a Tier One License is only allowed in the host’s\nprimary residence.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner may not obtain more than one Tier One License for a dwelling unit per calendar year.",
+      "section": "510.0104(b)(3)",
+      "quote": "Only one Tier One License may be issued for a dwelling unit per\ncalendar year.",
+      "value": 1.0,
+      "unit": "units",
+      "canonical_id": "MAX_UNITS_PER_OPERATOR"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must renew the license before it expires two years after issuance.",
+      "section": "510.0104(b)(4)",
+      "quote": "A Tier One License shall expire two years from the date of issuance\nand may be renewed in accordance with Municipal Code section\n510.0106(d).",
+      "value": 2.0,
+      "unit": "years",
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must obtain a Tier Two License to home share more than 20 days per calendar year.",
+      "section": "510.0104(c)(1)",
+      "quote": "A Tier Two License is required for home share short-term residential\noccupancy for an aggregate total of more than 20 days per calendar\nyear.",
+      "value": 20.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must use the dwelling unit as the owner's primary residence for a Tier Two home share.",
+      "section": "510.0104(c)(2)",
+      "quote": "Home share with a Tier Two License is only allowed in the host’s\nprimary residence.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must occupy the primary residence at least 275 days of the calendar year it is rented as a home share.",
+      "section": "510.0104(c)(3)",
+      "quote": "The host shall occupy the host’s primary residence for no less than\n275 days of the calendar year in which the primary residence is rented\nas a home share.",
+      "value": 275.0,
+      "unit": "days",
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must occupy the residence at least 75 percent of the days owned or rented if not held for the full preceding calendar year.",
+      "section": "510.0104(c)(3)",
+      "quote": "If the host has not rented or owned the dwelling unit\nfor the full preceding calendar year, the host shall occupy the host’s\nprimary residence for no less than 75 percent of the days the host has\nowned or rented the dwelling unit.",
+      "value": 75.0,
+      "unit": "percent",
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must obtain a Tier Three License for whole home rental outside Mission Beach for more than 20 days per calendar year.",
+      "section": "510.0104(d)(1)",
+      "quote": "A Tier Three License is required for whole home short-term\nresidential occupancy outside the Mission Beach Community\nPlanning Area as described in section 510.0104(e) for an aggregate\ntotal of more than 20 days per calendar year.",
+      "value": 20.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must require a minimum stay of two consecutive nights by the same guest under a Tier Three License.",
+      "section": "510.0104(d)(2)",
+      "quote": "A two consecutive night minimum stay by the same guest is required.",
+      "value": 2.0,
+      "unit": "nights",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must obtain a Tier Four License for whole home rental within Mission Beach for more than 20 days per calendar year.",
+      "section": "510.0104(e)(1)",
+      "quote": "A Tier Four License is required for whole home short-term residential\noccupancy within the Mission Beach Community Planning Area\n(depicted on the Map on file in the office of the City Clerk as\nDocument No. OO-21305) for an aggregate total of more than 20 days\nper calendar year.",
+      "value": 20.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must require a minimum stay of two consecutive nights by the same guest under a Tier Four License.",
+      "section": "510.0104(e)(2)",
+      "quote": "A two consecutive night minimum stay by the same guest is required.",
+      "value": 2.0,
+      "unit": "nights",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must be the host in order to apply for a license.",
+      "section": "510.0105(a)",
+      "quote": "Only a host may apply for a license.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OWN_UNIT"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "tax",
+      "requirement": "Owner must provide a Transient Occupancy Tax Certificate number or proof of concurrent application with the license application.",
+      "section": "510.0105(b)(1)",
+      "quote": "A Transient Occupancy Tax Certificate number for the dwelling unit\nor proof of concurrent application for a Transient Occupancy Tax\nCertificate for the dwelling unit.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LODGING_TAX"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "tax",
+      "requirement": "Owner must submit proof of payment of the Rental Unit Business Tax with the license application, if applicable.",
+      "section": "510.0105(b)(2)",
+      "quote": "Proof of payment of the Rental Unit Business Tax, if applicable.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must submit proof that the dwelling unit is the owner's primary residence when applying to home share.",
+      "section": "510.0105(b)(3)",
+      "quote": "For an application for a license to home share, proof that the dwelling\nunit is the host’s primary residence.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner may not be issued more than one short-term rental license in the city at a time.",
+      "section": "510.0106(a)",
+      "quote": "A host may be issued only one license for short-term residential occupancy at\na time within the City of San Diego.",
+      "value": 1.0,
+      "unit": "units",
+      "canonical_id": "MAX_UNITS_PER_OPERATOR"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must pay the required license fees before a license is issued.",
+      "section": "510.0106(c)(1)",
+      "quote": "A Tier Three License or a Tier Four License shall only be issued when\nthe required fees have been paid.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must timely pay the renewal fee, have complied with the ordinance, report any changes to the prior application, and submit required records to renew a license.",
+      "section": "510.0106(d)(1)",
+      "quote": "(A) timely pays the renewal fee;\n(B) has complied with the provisions of this Division during the\nterm of the current license;\n(C) provides information concerning any changes to the previous\napplication for or renewal of the license; and\n(D) submits the records described in Municipal Code section\n510.0107, unless the host lists exclusively on a hosting\nplatform that has an agreement with the City that includes a\nprovision for pass-through registration for license applicants.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner may not transfer or assign a license or license application.",
+      "section": "510.0106(e)",
+      "quote": "Licenses are not transferrable. The City shall not accept any request to transfer\nor assign ownership or location of any license or license application.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_NOT_TRANSFERABLE"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must maintain and use the dwelling unit at all times for residential occupancy only.",
+      "section": "510.0107(a)",
+      "quote": "maintain and use the dwelling unit at all times for residential occupancy only;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must be present on the premises during a Tier Two home share.",
+      "section": "510.0107(b)",
+      "quote": "for Tier Two Licenses, home share while present on the premises in\naccordance with section 510.0104(c)(3);",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must use a Tier Three or Tier Four license at least 90 days each year and submit quarterly utilization reports to the city.",
+      "section": "510.0107(c)",
+      "quote": "for Tier Three Licenses and Tier Four Licenses, use the license a minimum of\n90 days each year during the term of the license and submit quarterly reports\nto the City Manager containing the number of days the dwelling unit, or any\nportion thereof, was used for short-term residential occupancy to demonstrate\nutilization;",
+      "value": 90.0,
+      "unit": "days",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner may not allow the short-term rental to create a public nuisance.",
+      "section": "510.0107(d)",
+      "quote": "not allow the short-term residential occupancy to create a public nuisance;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "NOISE_LIMITS"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "tax",
+      "requirement": "Owner must comply with the city's transient occupancy tax provisions.",
+      "section": "510.0107(e)",
+      "quote": "comply with Chapter 3, Article 5, Division 1 of the Municipal Code;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LODGING_TAX"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "tax",
+      "requirement": "Owner must provide proof of payment of the Rental Unit Business Tax upon city request, if applicable.",
+      "section": "510.0107(f)",
+      "quote": "provide proof of payment of the Rental Unit Business Tax to the City upon\nrequest, if applicable;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must give all guests a Good Neighbor Policy notice covering neighborhood conduct, occupancy limits, parking, trash, noise limits, vacating, and police response costs.",
+      "section": "510.0107(g)",
+      "quote": "provide a Good Neighbor Policy notice, on a form acceptable to the City\nManager, to all guests that advises, at a minimum, the following:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must ensure the dwelling unit complies with current California Fire Code regulations.",
+      "section": "510.0107(h)",
+      "quote": "ensure that the dwelling unit complies with current California Fire Code\nRegulations, which may be confirmed by City inspection or host affidavit at\nthe discretion of the City Manager;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "SAFETY_EQUIPMENT"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner may not post signs on the premises promoting a business.",
+      "section": "510.0107(i)",
+      "quote": "that signs on the premises promoting a business are not allowed;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "NO_SIGNAGE"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must designate a local contact who responds to complaints in person or by phone within one hour and takes action to resolve them.",
+      "section": "510.0107(j)",
+      "quote": "designate a local contact who shall be responsible for actively discouraging\nand preventing any nuisance activity at the premises, pursuant to Chapter 5 of\nthe Municipal Code. The host or designated local contact shall respond to a\ncomplainant in person or by telephone within one hour for all reported\ncomplaints and shall take action to resolve the matter;",
+      "value": 1.0,
+      "unit": "hours",
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must post an exterior notice visible from the public right-of-way showing the Transient Occupancy Tax Certificate number, license number, and contact information, and maintain it in good condition.",
+      "section": "510.0107(k)",
+      "quote": "post a notice on the exterior of the dwelling unit in a location visible to the\npublic from the sidewalk or public right-of-way, whichever is closer, that\nincludes the Transient Occupancy Tax Certificate number, license number,\ncontact information and telephone number for the host or the designated local\ncontact and for the City of San Diego Code Enforcement Division. The host\nshall maintain the notice in good condition while the dwelling unit is operated\nfor short-term residential occupancy.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must make the posted notice 8.5 by 11 inches in all capital black bold font of at least 20 points.",
+      "section": "510.0107(k)(1)",
+      "quote": "The notice shall be 8.5 inches by 11 inches.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "license",
+      "requirement": "Owner must include the Transient Occupancy Tax Certificate number and license number on all advertisements.",
+      "section": "510.0107(l)",
+      "quote": "include the Transient Occupancy Tax Certificate number and license number\non all advertisements; and",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_DISPLAYED_IN_ADVERTS"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must post human trafficking reporting guidance inside the unit and educate employees or contractors about identifying and reporting human trafficking.",
+      "section": "510.0107(m)",
+      "quote": "post, in a conspicuous location within the dwelling unit, guidance for guests to\nreport human trafficking based on information provided by the City Manager\nand educate employees or contractors of the host who may interact with\nguests about identifying and reporting human trafficking.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must keep records of each rental transaction for four years, including address, dates and nights, Good Neighbor notice, gross receipts and tax numbers.",
+      "section": "510.0108(a)",
+      "quote": "A host shall maintain the following information for each short-term\nresidential occupancy transaction for a period of four years from the date of\nthe transaction:",
+      "value": 4.0,
+      "unit": "years",
+      "canonical_id": "GUEST_RECORDS"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must complete a human trafficking awareness course before the initial listing and keep proof while licensed.",
+      "section": "510.0108(b)",
+      "quote": "For as long as a host holds a license, a host shall maintain proof of completing\na human trafficking awareness course prior to the initial listing of the dwelling\nunit for short-term residential occupancy.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "San Diego, California",
+      "kind": "other",
+      "requirement": "Owner must deliver the required transaction records to the city upon request.",
+      "section": "510.0108(c)",
+      "quote": "Subject to applicable law, a host shall deliver information provided in\nMunicipal Code section 510.0108(a) to the City Manager upon request.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "GUEST_RECORDS"
+    }
+  ]
+}

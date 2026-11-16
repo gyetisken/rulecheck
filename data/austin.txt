@@ -1,0 +1,515 @@
+AN ORDINANCE AMENDING CITY CODE CHAPTER 4-23 RELATED TO
+REGULATIONS FOR SHORT-TERM RENTAL OWNERS, OPERATORS, AND
+PLATFORMS; CREATING OFFENSES; AND ESTABLISHING PENALTIES.
+PART 1. The City Council adopts the findings described in Exhibit A, which is attached
+to this ordinance.
+PART 2. City Code Chapter 4-23 (Short-Term Rentals) is repealed and replaced to read:
+CHAPTER 4-23 SHORT-TERM RENTALS
+ARTICLE 1. GENERAL PROVISIONS.
+§ 4-23-1 DEFINITIONS.
+In this chapter,
+(1) APPELLANT means an applicant or an operator who appeals a decision.
+(2) AUSTIN METRO AREA means the five-county metropolitan area that
+County, Hays County, Bastrop County, and Caldwell County.
+(3) DELIST NOTICE means a written notice that complies with the requirement
+set out in Section 4-23-23 (Obligation to Delist Short-Term Rentals).
+(4) DIRECTOR means the director of the Development Services Department or
+successor department.
+(5) EMERGENCY CONDITION means an unforeseen combination of
+circumstances or the resulting state that calls for immediate action or an
+urgent need for assistance or relief. This term includes, at a minimum, any
+fire, natural disaster, power outage, gas leak, noise violation, disturbance,
+criminal activity, or medical emergency.
+(6) GUEST means a person who rents or occupies a short-term rental during a
+rental period, including their invited guests.
+(7) HOUSING UNIT means a dwelling or mobile home.
+(8) INDIVIDUAL means a natural person.
+Item No. 12
+Sept. 11, 2025 Agenda
+Version 2
+Corrected a typographical error on Line 189
+Clarified text in Subsections (D) and (E) in Part 3
+(9) NEIGHBOR means a person who is entitled to notice under Section 4-23-44
+(Notification Requirements).
+(10) OPERATOR means a person who owns and operates a short-term rental.
+(11) PLATFORM means a person who provides a means to advertise or promote
+a short-term rental or facilitates short-term rental bookings.
+(12) SHORT-TERM RENTAL means the rental of a housing unit or a portion of
+a housing unit for periods of less than 30 consecutive days. This term does
+not include an extension for less than 30 consecutive days of a previously
+existing rental agreement of 30 consecutive days or more or a rental between
+the parties to the sale of that housing unit.
+(13) USER means a person who uses a short-term rental platform to advertise a
+short-term rental.
+§ 4
+-23-2 RULES.
+The director may adopt administrative rules, as needed, in accordance with Chapter
+1-2 (Administrative Rules) to administer, implement, and enforce this chapter.
+§ 4
+-23-3 APPEALS.
+(A) An applicant may appeal:
+(1) a requirement to implement and maintain mitigation measures;
+(2) a denial of an application for an operator’s license; or
+(3) a denial of a renewal application.
+(B) A
+n operator may appeal:
+(1) the revocation of a short-term rental license; or
+(2) a nuisance declaration issued by the director.
+(C) R
+equirements for an appeal.
+(1) An appeal must be submitted to the director.
+(2) The deadline to submit an appeal is 10 days after the date the director takes
+an action described in Subsections (A) or (B).
+(3) An appeal must be in writing and i dentify the reason the action is being
+appealed.
+(D) Appeal Hearings.
+(1) An appeal under this section must be heard by a hearing officer appointed by
+the city manager.
+(2) The director must provide written notice of the hearing to the appellant.
+(3) The director and the appellant may present evidence, testimony, and
+argument.
+(4) A hearing must be held within 21 days of receiving the appeal.
+(5) A decision on an appeal must be issued no later than the 10th day after the
+hearing, must be in writing, and must be sent to the director and appellant.
+(E) While an appeal is pending, an operator may not accept new bookings or rentals
+but may honor bookings or rentals accepted before:
+(1) the operator’s license was revoked;
+(2) the application to renew the operator’s license was denied; or
+(3) the director issued the nuisance declaration.
+(F) If the appellant fails to appear for the appeal hearing, the appeal is denied. The
+director is not required to present evidence, testimony, or argument when an
+appellant fails to appear for an appeal hearing.
+ARTICLE 2. PLATFORMS.
+§ 4
+-23-21 APPLICABILITY.
+This article applies to a platform that advertises or promotes short-term rentals or
+facilitates short-term rental bookings within the city.
+§ 4
+-23-22 REQUIREMENTS FOR ADVERTISEMENTS AND PROMOTIONS.
+A platform must require each user to include a license number in a short-term
+rental advertisement or promotion on the platform.
+§ 4
+-23-23 OBLIGATION TO DELIST SHORT-TERM RENTALS.
+(A) A platform must remove an advertisement or promotion for a short-term rental
+within 10 days from the date the director sends a delist notice.
+(B) A delist notice must:
+(1) be in writing;
+(2) identify the short-term rental’s web address and, if known, physical address;
+and
+(3) state that the short-term rental is operating without a license and that the
+advertisement or promotion must be removed.
+(C) A p
+latform must provide the director with an electronic email address that can
+receive delist notices.
+§ 4
+-23-24 DOCUMENTATION OF HOTEL OCCUPANCY TAXES COLLECTED.
+(A) A platform must make documentation available to users that demonstrates the
+amount of hotel occupancy taxes collected on behalf of the user.
+(B) Th
+e documentation must be accessible to a user on at least a quarterly basis.
+§ 4
+-23-25 ACCEPTING FEES FROM CERTAIN SHORT-TERM RENTALS
+PROHIBITED.
+(A) A platform may not accept a fee to facilitate a booking for a short-term rental if the
+short-term rental is not the subject of a valid operator’s license.
+(B) A p
+latform that complies with Sections 4-23-22 (Requirements for Advertisements
+and Promotions) and Section 4-23-23 (Obligation to Delist Short-Term Rentals), is
+presumed to comply with Subsection (A).
+ARTICLE 3. SHORT-TERM RENTAL OPERATORS.
+§ 4
+-23-31 ELIGIBILITY TO OPERATE A SHORT-TERM RENTAL.
+(A) An operator must own the housing unit that will be operated as a short-term rental.
+(B) On
+a site with three or fewer housing units, an individual can operate a short-term
+rental.
+(C) Ex
+cept as provided in Subsection (D), an individual may operate more than one
+short-term rental if the short-term rentals are located at least 1,000 feet apart.
+(D) On a site with four or more housing units, the greater of one unit or 25 percent of
+the housing units the person owns can be operated as short-term rentals.
+(E) In this section, an operator qualifies as an  individual when the housing unit is
+owned:
+(1) only by one or more individuals;
+(2) by a trust and each trustee and beneficiary are individuals; or
+(3) by a limited liability company and each member is an individual.
+(F) The 1,000-foot requirement in Subsection (C) applies to an individual who
+participates in a trust or limited liability company described in Subsection (E)
+without regard to the name of the trust or the limited liability company.
+(G) A person is not eligible to obtain a new operator’s license for any short-term rental
+for 12 months if the person was the operator of a short-term rental that was
+declared a nuisance by a director or a court of competent jurisdiction. The 12-
+month period begins the later of the date their license was revoked or their appeal
+of the revocation was denied.
+(H) Except as provided in Subsection (I), a short-term rental that was the subject of an
+operator’s license that was revoked cannot be the subject of a new operator’s
+license for:
+(1) six months from the later of the date the license was revoked or the appeal of
+the revocation was denied; or
+(2) 12 months from the later of the date the license was revoked or the appeal of
+the revocation was denied if the operator’s license was revoked because the
+short-term rental was declared a nuisance either by the director or a court of
+competent jurisdiction.
+(I) A person may apply for an operator’s license for a short-term rental that was the
+subject of a revoked operator’s license before the time periods described in
+Subsection (H) expire if the director determines that the applicant is not associated
+with the prior property owner.
+(1) An applicant may submit a request for a determination under this subsection
+using a form approved by the director and by providing information the
+director requires to make a decision on the request.
+(2) The director’s decision is not appealable.
+§ 4-23-32 OPERATOR LICENSE REQUIRED.
+(A) A person must obtain an operator’s license to operate a short-term rental.
+(B) A se parate operator’s license is required for each short-term rental.
+(C) An o perator’s license:
+(1) is valid for a maximum of two years from the date of issuance, subject to a
+one-time extension of 30 days at the discretion of the director; and
+(2) may not be transferred and does not convey with a sale or transfer of the
+property.
+(D) An operator must include the operator’s license number in any advertisement or
+promotion for the short-term rental.
+(E) A person may not advertise or promote or allow another to advertise or promote a
+short-term rental if the housing unit is not the subject of a valid operator’s license.
+§ 4
+-23-33 LOCAL CONTACTS.
+(A) Each operator must designate a local contact.
+(B) A l
+ocal contact must be:
+(1) an individual;
+(2) present within the Austin Metro Area; and
+(3) authorized to:
+(a) make decisions regarding the short-term rental and its guests; and
+(b) take action to resolve emergency conditions.
+(C) An
+operator may serve as a local contact.
+(D) Within two hours of being contacted about emergency conditions occurring at the
+short-term rental, the local contact must:
+(1) respond by phone or text message if contacted by a City employee or
+neighbor; or
+(2) respond through the platform’s application or in the manner preferred by the
+guest if contacted by a guest; and
+(3) take action to resolve the emergency conditions.
+(E) A local contact must be present at the short-term rental within two hours if
+requested by a City employee.
+(F) An operator may designate an alternative local contact.
+§ 4-23-34 OPERATIONAL REQUIREMENTS.
+(A) An operator is responsible for:
+(1) complying with all local, state, and federal laws;
+(2) ensuring that each guest of the operator’s short-term rental complies with all
+state, local, and federal laws; and
+(3) when applicable, implementing and maintaining mitigation requirements.
+(B) When the information provided in an application to obtain a new operator’s license
+or to renew an operator’s license changes, the operator must update the information
+within five days after the information changes.
+(C) If the short-term rental does not include an entire housing unit, an operator must
+provide a guest with the exclusive use of a bedroom and shared use of a full
+bathroom.
+(D) A short-term rental must be habitable.
+(E) An operator must make the following available to each guest:
+(1) a copy of the information packet described in Section 4-23-41
+(Requirements to Obtain an Operator’s License); and
+(2) a list of fire extinguisher locations in the short-term rental.
+(F) An operator or guest of a short-term rental may not use or allow the use of sound
+equipment that produces sound in excess of 75 decibels at the property line
+between 10:00 a.m. and 10:00 p.m.
+(G) An operator or guest of a short-term rental may not use or allow use of sound
+equipment that produces sound audible beyond the property line between 10:00
+p.m. and 10:00 a.m.
+(H) An operator or guest of a short-term rental may not make or allow another to make
+noise or play a musical instrument audible to an adjacent business or residence
+between 10:30 p.m. and 7:00 a.m.
+§ 4-23-35 RESERVED.
+§ 4-23-36 MITIGATION REQUIREMENTS.
+(A) T he director may impose mitigation requirements on an operator.
+(B) A m itigation requirement must address one or more of the confirmed complaints
+received about the operator’s short-term rental.
+(C) An
+operator must implement and maintain any mitigation requirements when
+imposed by the director.
+(D) A mitigation requirement imposed under this section must be provided to the
+operator in writing and may be appealed.
+ARTICLE 4. SHORT-TERM RENTAL OPERATOR LICENSE APPLICATIONS.
+§ 4
+-23-41 REQUIREMENTS TO OBTAIN AN OPERATOR’S LICENSE.
+(A) To obtain a new operator license, a person who owns the housing unit to be
+licensed as a short-term rental must apply on a form approved by the director and
+pay any fees required by this chapter.
+(B) At a
+minimum, an applicant must provide the following information:
+(1) a certification by the applicant and the applicant’s agent that the housing unit
+is not subject to outstanding City Code or state law violations;
+(2) the applicant’s name, street address, mailing address, electronic mail
+address, and telephone number;
+(3) the local contact’s name, street address, mailing address, electronic mail
+address, and telephone number;
+(4) the proposed short-term rental’s street address;
+(5) a self-certified safety checklist;
+(6) the name of each platform that will be used to advertise or promote the
+short-term rental; and
+(7) any other information requested by the director.
+(C) E
+xcept as provided in Section 4-23-43 (Application Denials), the director is
+required to issue a short-term rental license:
+(1) after the director determines the applicant is eligible to operate a short-term
+rental;
+(2) the applicant complies with this section; and
+(3)  the applicant pays the application and notification fees that are set by
+separate ordinance.
+(D) Before issuing an operator’s license, the director may require the applicant to
+obtain a third-party inspection that demonstrates the housing unit does not pose a
+hazard to life, health, or public safety when the short-term rental is the subject of
+one or more state law or City Code violations within the prior 24 months.
+(E) When the director issues an operator’s license, the director must provide a packet
+of information with each license summarizing the requirements applicable to short-
+term rentals, including:
+(1) the name and contact information of the local contact designated in the
+application;
+(2) restrictions on noise applicable under Section 4-23-34 (Operational
+Requirements), including limitations on the use of amplified sound;
+(3) parking restrictions;
+(4) trash collection schedule;
+(5) information on relevant burn bans;
+(6) information on relevant water restrictions;
+(7) information on applicable requirements of the Americans with Disabilities
+Act; and
+(8) other information applicable to short-term rentals.
+§ 4-23-42 REQUIREMENTS TO RENEW AN OPERATOR’S LICENSE.
+(A) To renew an operator’s license, the operator must:
+(1) update the information required in Section 4-23-41 (Requirements to Obtain
+an Operator’s License);
+(2) pay a renewal fee set by separate ordinance;
+(3) pay a notification fee set by separate ordinance; and
+(4) pr ovide proof of payment of hotel occupancy taxes due as of the date of
+submission of the application if the operator is not using a platform to collect
+payments for the use or possession, or for the right to the use or possession,
+of a short-term rental.
+(B) If the short-term rental is the subject of outstanding state law or City Code
+violations, the director may require the applicant to obtain a third-party inspection
+that demonstrates the housing unit does not pose a hazard to life, health, or public
+safety before renewing the operator’s license.
+(C) As a condition to renew an operator’s license, the director may impose mitigation
+requirements in accordance with Section 4-23-36 (Mitigation Requirements).
+§ 4-23-43 APPLICATION DENIALS.
+(A) The director must deny an application to obtain or to renew an operator’s license
+if:
+(1) the applicant or operator is ineligible under Section 4-23-31 (Eligibility to
+Operate a Short-Term Rental); or
+(2) the application and applicant do not comply with the applicable
+requirements in Section 4-23-41 (Requirements to Obtain an Operator’s
+License) or Section 4-23-42 (Requirements to Renew an Operating License).
+(B) The director may deny an application for a short-term rental license or an
+application to renew a short-term rental license if the director determines that the
+short-term rental or proposed short-term rental:
+(1) poses a hazard to life, health, or public safety based on the third-party
+inspection;
+(2) is the subject of at least two separate disturbances that impact the quiet
+enjoyment of others; or
+(3) is the subject of at least two violations of federal law, state law, or City
+Code.
+(C) When the director denies an application to obtain or renew an operator’s license,
+the denial must include the reason the application was denied.
+(D) A denial may be appealed under Section 4-23-3 (Appeals).
+§ 4-23-44 NOTIFICATION.
+(A) The director must provide notice to each property located within 100 feet of the
+short-term rental.
+(B) At a  minimum, the notice must include:
+(1) the op erator license number for the short-term rental;
+(2) the address of the short-term rental;
+(3) the name and contact information for the operator; and
+(4) the name and contact information for the individuals who are designated as
+the operator’s local contacts.
+ARTICLE 5. SHORT-TERM RENTAL ENFORCEMENT
+§ 4
+-23-51 PENALTY.
+(A) A person who violates a provision of this chapter is guilty of a separate offense for
+each day the violation of this chapter continues.
+(B) Each offense is punishable by a fine not to exceed $500. A culpable mental state is
+not required and need not be proved.
+(C) After the time to appeal a decision passes or an appeal is denied, the director may
+issue a delist notice for a short-term rental if the license was revoked.
+(D) The director may issue a delist notice for a short-term rental if the director
+determines that the short-term rental is not the subject of a valid license.
+§ 4
+-23-52 LICENSE REVOCATIONS.
+(A) The director may revoke an operator’s license if the director determines that:
+(1) the housing unit poses a threat to life, health, or public safety;
+(2) the short-term rental qualifies as a nuisance short-term rental as described in
+Section 4-23-54 (Nuisance Short-Term Rental)
+(3) a court of competent jurisdiction declares the short-term rental a nuisance;
+(4) the operator fails to implement and maintain applicable mitigation
+requirements;
+(5) the operator fails to comply with a compliance plan;
+(6) the local contact failed to respond within two hours of being contacted; or
+(7) the director determines that the operator’s license was issued in error.
+(B) E xcept as provided in Subsections (C) or (D), the director must provide an operator
+with a written notice of intent to revoke and hold a pre-revocation conference
+before revoking an operator’s license.
+(C) Th
+e director may revoke an operator’s short-term without a notice of intent to
+revoke or a pre-revocation conference if the director determines that:
+(1) the operator failed to comply with the compliance plan;
+(2) the director issued the operator’s license in error; or
+(3) a court of competent jurisdiction declared the short-term rental a nuisance.
+(D) If the same or similar issues occur within six months from the date the director
+determined that the operator complied with the compliance plan, the director may
+revoke the operator’s license without:
+(1) issuing an additional notice of intent to revoke; or
+(2) holding an additional pre-revocation conference.
+(E) If an operator fails to attend a pre-revocation conference, the requirement to hold a
+pre-revocation conference is satisfied and the director may revoke the operator’s
+license.
+(F) A revocation may be appealed under Section 4-23-3 (Appeals).
+§ 4
+-23-53 NOTICE OF INTENT TO REVOKE, PRE-REVOCATION
+CONFERENCE, AND COMPLIANCE PLAN.
+(A) A notice of intent must:
+(1) state the reasons for revocation; and
+(2) provide the date, time, and location of the pre-revocation conference.
+(B) T
+he director must schedule a pre-revocation conference to discuss:
+(1) the issues that triggered the notice of intent to revoke; and
+(2) a proposed compliance plan that includes corrective measures or mitigation
+requirements.
+(C) After the pre-revocation conference, the director must provide the operator with a
+written compliance plan that:
+(1) states the corrective measures and mitigation requirements required to avoid
+revocation; and
+(2) time for compliance.
+(D) If the operator fails to attend the pre-revocation conference, the director is not
+required to issue a compliance plan.
+§ 4
+-23-54 NUISANCE SHORT-TERM RENTALS.
+(A) A person maintains a nuisance short-term rental when:
+(1) the director issues a notice of violation for operating without a short-term
+rental, the person continues to operate the short-term rental after the notice
+of violation is issued, and:
+(a) the person fails to obtain an operator’s license,
+(b) the person is ineligible for an operator’s license, or
+(c) the short-term rental is ineligible to be used as a short-term rental; or
+(2) the short-term rental is the subject of numerous complaints related to:
+(a) repeated violations of local, state, or federal laws; or
+(b) disturbances that interfere with the quiet enjoyment of others.
+(B) A
+short-term rental is the subject of numerous complaints based on documentation
+of:
+(1) police and code compliance calls for service, including 311 calls;
+(2) police reports;
+(3) gatherings that cause a public disturbance; or
+(4) noise complaints.
+(C)
+If the director revokes an operator’s license because the short-term rental qualifies
+as a nuisance and the operator appeals the revocation, the appeal must address
+whether the short-term rental qualifies as a nuisance.
+PART 3. Continuation of Existing Short-Term Rental Licenses and Other Requirements.
+(A) A short-t erm rental license qualifies as existing if the license is valid on September
+30, 2025.
+(B) An existing license remains effective until the expiration date on the short-term
+rental license.
+(C) To renew an existing short-term rental license, an operator must apply to renew the
+license at least 30 days before the license expires.
+(D) An operator with an existing license renewed under this part is not subject to the
+eligibility requirements in Section 4-23-31 (Eligibility Requirements) except as
+provided in Subsection (E).
+(E) An operator will be required to satisfy the eligibility requirements in Section 4-23-
+31 (Eligibility Requirements) if:
+(1) the operator fails to renew an existing license as set out in this part or a
+subsequent license; or
+(2) the director revokes the existing license or a subsequent license.
+PART 4. Except for Article 2 (Platforms) in Part 2, this ordinance takes effect on
+October 1, 2025. Article 2 (Platforms) takes effect on May 1, 2026.
+PASSED AND APPROVED
+§
+§
+, 2025 § _______________________________
+Kirk Watson
+Mayor
+APPROVED: _____________________ ATTEST: _______________________
+Deborah Thomas              Erika Brady
+City Attorney                 City Clerk
+EXHIBIT A. FINDINGS OF FACT
+The City Council finds the following:
+(1) Council desires to amend the City’s zoning regulations that apply to STRs,
+adopt new STR-related regulations for owners, operators, and platforms, and
+require short-term rental (STR) platforms to collect and remit Hotel
+Occupancy Tax (HOT).
+(2) Transient occupancies such as hotels/motels are typically located on
+property that is commercially zoned.
+(3) STRs are structures that are designed and constructed as housing units but
+operate in a transient nature.
+(4) Unlike most hotels and motels, STRs are predominantly located in single-
+family and multi-family neighborhoods.
+(5) However, when housing units are utilized solely as STRs, those housing
+units are no longer available as long-term housing for residents, which can
+impact housing affordability, neighborhood dynamics, and the quiet
+enjoyment of one’s home.
+(6) Over the years, the Council has sought to reduce housing costs and to make
+housing more affordable.
+(7) To that end, Council has adopted recent changes to the City’s Land
+Development Code that are designed to increase housing supply and
+includes regulations that allow for (a) additional housing units on properties
+zoned single-family, (b) smaller residential lots, and (c) residential uses in
+exchange for income-restricted housing.
+(8) To avoid undoing the work that allows for additional housing units to be
+constructed, the City must be mindful of how many housing units are
+licensed as STRs. For this reason, it is necessary to establish density limits
+on STRs.
+(9) It is customary for sites with four or more units to be:
+(a) owned by corporate entities; or
+(b) operated as a condominium regime.
+(10) On sites with four or more units, an overall cap on the number of STRs a
+person can own is required.
+(11) It is customary for sites with three or fewer dwelling units to be owned by
+individuals, trusts with individuals as beneficiaries, or limited liability
+companies with individuals as the sole members.
+(12) In areas that consist of predominately sites with three or fewer units, density
+is more likely to be controlled when there is:
+(a) a limit on the number of STRs a person can own on a site,
+(b) a spacing requirement, and
+(c) a requirement that STRs must be owned by individuals.
+(13) On sites with three or fewer units, it is necessary to limit STR ownership to
+individuals so that the density limits cannot be circumvented by separate
+corporate entities that own different properties and dwelling units but are
+related.
+(14) The Council recognizes that STRs provide opportunities for: (a) property
+owners who wish age in place or need additional financial assistance to pay
+property taxes; (b) individuals who visit Austin to stay near friends and
+family who reside in Austin or to stay in unique and interesting properties,
+(c) households who live in Austin to stay within the City when their property
+is being renovated, and (d) another source of income for some individuals.
+(15) Irrespective of whether a property owner lives in Austin or outside of
+Austin, it is critical to everyone’s success that STRs are operated in a
+manner that is compatible with the surrounding neighborhood.
+(16) When a STR is not operated properly, the activities at the STR disturb long-
+term residents’ quiet enjoyment of their property and the impact of those
+disturbances can be significant.
+(17) A STR that does not comply with the City Code and is the source of
+disturbances in a neighborhood is a nuisance.
+(18) Revoking a STR license when a STR is a nuisance is a proper remedy
+because a property owner does not have a right to operate a nuisance.
+(19) 94% of STR-related calls involve an unlicensed STR.
+(20) Requiring STR platforms to require users/hosts to include a license number
+in their advertisements can assist the City with ensuring that STRs operating
+within the City are licensed.
+(21) STR platforms require their users/hosts to include a license number in
+advertisements in Galveston, Texas; Denver, Colorado; San Franciso,
+California; Atlanta, Georgia; and Chicago, Illinois.
+(22) Requiring STR platforms to delist an unlicensed STR, at the request of the
+City, is an appropriate remedy for unlicensed STRs since maintaining
+advertisements allows for unlawful behavior (i.e. operating an unlicensed
+STR) to continue.
+(23) Other cities, including Galveston, Texas and San Francisco, California,
+require STR platforms to delist unlicensed STRs. Houston, Texas recently
+adopted regulations to require STR platforms to delist unlicensed STRs.
+(24) STR platforms that require license numbers in advertisements and delist
+unlicensed STRs at the City’s request are protected from liability under a
+“safe harbor” provision.
+(25) STR owners/operators are provided with due process before the City
+actually revokes their STR license.
+(26) These findings express the purposes, goals, and objectives the Council
+intends to achieve with its overhaul of the City’s existing STR regulations.
+(27) The ordinances:
+(a) reflect the balancing of competing goals and objectives;
+(b) are adopted in accordance with the City’s home rule authority to
+protect public health, welfare, and safety; and
+(c) are adopted consistent with the City’s zoning authority and police
+powers.

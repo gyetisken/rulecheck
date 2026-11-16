@@ -1,0 +1,314 @@
+{
+  "rules": [
+    {
+      "city": "Austin, Texas",
+      "kind": "ownership",
+      "requirement": "Owner must own the housing unit operated as a short-term rental.",
+      "section": "4-23-31",
+      "quote": "An operator must own the housing unit that will be operated as a short-term rental.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OWN_UNIT"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "distance",
+      "requirement": "Owner may not operate more than one short-term rental unless the rentals are at least 1,000 feet apart.",
+      "section": "4-23-31",
+      "quote": "Ex cept as provided in Subsection (D), an individual may operate more than one short-term rental if the short-term rentals are located at least 1,000 feet apart.",
+      "value": 1000.0,
+      "unit": "feet",
+      "canonical_id": "MIN_SEPARATION_BETWEEN_RENTALS"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "unit_cap",
+      "requirement": "Owner may not operate as short-term rentals more than the greater of one unit or 25 percent of the housing units owned on a site with four or more housing units.",
+      "section": "4-23-31",
+      "quote": "On a site with four or more housing units, the greater of one unit or 25 percent of the housing units the person owns can be operated as short-term rentals.",
+      "value": 25.0,
+      "unit": "percent",
+      "canonical_id": "MAX_UNITS_PER_OPERATOR"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "ownership",
+      "requirement": "Owner must qualify as an individual, meaning the unit is owned by individuals, a trust whose trustees and beneficiaries are all individuals, or an LLC whose members are all individuals.",
+      "section": "4-23-31",
+      "quote": "In this section, an operator qualifies as an  individual when the housing unit is owned:\n(1) only by one or more individuals;\n(2) by a trust and each trustee and beneficiary are individuals; or\n(3) by a limited liability company and each member is an individual.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OWN_UNIT"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner may not obtain a new operator's license for 12 months after operating a short-term rental that was declared a nuisance.",
+      "section": "4-23-31",
+      "quote": "A person is not eligible to obtain a new operator’s license for any short-term rental for 12 months if the person was the operator of a short-term rental that was declared a nuisance by a director or a court of competent jurisdiction.",
+      "value": 12.0,
+      "unit": "months",
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must obtain an operator's license to operate a short-term rental.",
+      "section": "4-23-32",
+      "quote": "A person must obtain an operator’s license to operate a short-term rental.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must hold a separate operator's license for each short-term rental unit.",
+      "section": "4-23-32",
+      "quote": "A se parate operator’s license is required for each short-term rental.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must renew the operator's license at least every two years, as a license is valid for a maximum of two years.",
+      "section": "4-23-32",
+      "quote": "is valid for a maximum of two years from the date of issuance, subject to a one-time extension of 30 days at the discretion of the director; and",
+      "value": 2.0,
+      "unit": "years",
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner may not transfer the operator's license, and it does not convey with a sale or transfer of the property.",
+      "section": "4-23-32",
+      "quote": "may not be transferred and does not convey with a sale or transfer of the property.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_NOT_TRANSFERABLE"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must include the operator's license number in any advertisement or promotion for the short-term rental.",
+      "section": "4-23-32",
+      "quote": "An operator must include the operator’s license number in any advertisement or promotion for the short-term rental.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_DISPLAYED_IN_ADVERTS"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner may not advertise or promote, or allow another to advertise or promote, a short-term rental without a valid operator's license.",
+      "section": "4-23-32",
+      "quote": "A person may not advertise or promote or allow another to advertise or promote a short-term rental if the housing unit is not the subject of a valid operator’s license.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_DISPLAYED_IN_ADVERTS"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must designate a local contact who is an individual present within the Austin Metro Area and authorized to make decisions and resolve emergencies.",
+      "section": "4-23-33",
+      "quote": "Each operator must designate a local contact.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must ensure the local contact responds within two hours of being contacted about emergency conditions and takes action to resolve them.",
+      "section": "4-23-33",
+      "quote": "Within two hours of being contacted about emergency conditions occurring at the short-term rental, the local contact must:",
+      "value": 2.0,
+      "unit": "hours",
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must ensure the local contact is present at the short-term rental within two hours if requested by a City employee.",
+      "section": "4-23-33",
+      "quote": "A local contact must be present at the short-term rental within two hours if requested by a City employee.",
+      "value": 2.0,
+      "unit": "hours",
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must comply with all local, state, and federal laws and ensure guests do the same.",
+      "section": "4-23-34",
+      "quote": "complying with all local, state, and federal laws;",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must update application information within five days after the information changes.",
+      "section": "4-23-34",
+      "quote": "When the information provided in an application to obtain a new operator’s license or to renew an operator’s license changes, the operator must update the information within five days after the information changes.",
+      "value": 5.0,
+      "unit": "days",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must provide a guest with exclusive use of a bedroom and shared use of a full bathroom when renting less than an entire housing unit.",
+      "section": "4-23-34",
+      "quote": "If the short-term rental does not include an entire housing unit, an operator must provide a guest with the exclusive use of a bedroom and shared use of a full bathroom.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must keep the short-term rental habitable.",
+      "section": "4-23-34",
+      "quote": "A short-term rental must be habitable.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must give each guest the city information packet and a list of fire extinguisher locations.",
+      "section": "4-23-34",
+      "quote": "An operator must make the following available to each guest:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "SAFETY_EQUIPMENT"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner may not use or allow sound equipment producing sound over 75 decibels at the property line between 10:00 a.m. and 10:00 p.m.",
+      "section": "4-23-34",
+      "quote": "An operator or guest of a short-term rental may not use or allow the use of sound equipment that produces sound in excess of 75 decibels at the property line between 10:00 a.m. and 10:00 p.m.",
+      "value": 75.0,
+      "unit": "decibels",
+      "canonical_id": "NOISE_LIMITS"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner may not use or allow sound equipment producing sound audible beyond the property line between 10:00 p.m. and 10:00 a.m.",
+      "section": "4-23-34",
+      "quote": "An operator or guest of a short-term rental may not use or allow use of sound equipment that produces sound audible beyond the property line between 10:00 p.m. and 10:00 a.m.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "NOISE_LIMITS"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner may not make or allow noise or musical instruments audible to an adjacent business or residence between 10:30 p.m. and 7:00 a.m.",
+      "section": "4-23-34",
+      "quote": "An operator or guest of a short-term rental may not make or allow another to make noise or play a musical instrument audible to an adjacent business or residence between 10:30 p.m. and 7:00 a.m.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "NOISE_LIMITS"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must implement and maintain any mitigation requirements imposed by the director.",
+      "section": "4-23-36",
+      "quote": "An operator must implement and maintain any mitigation requirements when imposed by the director.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must apply for the license on a form approved by the director and pay the required fees.",
+      "section": "4-23-41",
+      "quote": "To obtain a new operator license, a person who owns the housing unit to be licensed as a short-term rental must apply on a form approved by the director and pay any fees required by this chapter.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must provide required application information, including a certification of no outstanding code violations, contact details, the rental address, a self-certified safety checklist, and the platforms to be used.",
+      "section": "4-23-41",
+      "quote": "At a minimum, an applicant must provide the following information:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must obtain a third-party inspection showing the unit is not a hazard to life, health, or public safety if required by the director due to violations within the prior 24 months.",
+      "section": "4-23-41",
+      "quote": "Before issuing an operator’s license, the director may require the applicant to obtain a third-party inspection that demonstrates the housing unit does not pose a hazard to life, health, or public safety when the short-term rental is the subject of one or more state law or City Code violations within the prior 24 months.",
+      "value": 24.0,
+      "unit": "months",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must update application information and pay renewal and notification fees to renew the operator's license.",
+      "section": "4-23-42",
+      "quote": "To renew an operator’s license, the operator must:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "tax",
+      "requirement": "Owner must provide proof of payment of hotel occupancy taxes due when renewing if not using a platform that collects payments.",
+      "section": "4-23-42",
+      "quote": "pr ovide proof of payment of hotel occupancy taxes due as of the date of submission of the application if the operator is not using a platform to collect payments for the use or possession, or for the right to the use or possession, of a short-term rental.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LODGING_TAX"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "other",
+      "requirement": "Owner must obtain a third-party inspection before renewal if required by the director due to outstanding violations.",
+      "section": "4-23-42",
+      "quote": "If the short-term rental is the subject of outstanding state law or City Code violations, the director may require the applicant to obtain a third-party inspection that demonstrates the housing unit does not pose a hazard to life, health, or public safety before renewing the operator’s license.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner may not accept new bookings while an appeal of a revocation or denial is pending.",
+      "section": "4-23-3",
+      "quote": "While an appeal is pending, an operator may not accept new bookings or rentals but may honor bookings or rentals accepted before:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Austin, Texas",
+      "kind": "license",
+      "requirement": "Owner must apply to renew an existing license at least 30 days before it expires.",
+      "section": "PART 3",
+      "quote": "To renew an existing short-term rental license, an operator must apply to renew the license at least 30 days before the license expires.",
+      "value": 30.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_RENEWAL"
+    }
+  ]
+}

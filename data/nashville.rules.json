@@ -1,0 +1,364 @@
+{
+  "rules": [
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner must obtain an STRP permit from the department of codes administration before operating or advertising a short-term rental.",
+      "section": "6.28.030.A.2.a",
+      "quote": "No person or entity shall operate an STRP or advertise a residential property for use as an STRP without the owner of the property first having obtained an STRP permit issued by the department of codes administration in accordance with the provisions of this chapter.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner must display the permit number or a legible image of the permit in any online advertisement.",
+      "section": "6.28.030.A.2.b",
+      "quote": "Any advertising or description of an STRP on any internet website must: (a) prominently display the permit number for the STRP unit; or (b) include an image of the permit, or a link to an image of the permit, in which the permit number is legible.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_DISPLAYED_IN_ADVERTS"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must permanently reside in the short-term rental unit, or in a residential unit on the same lot in single-family and one and two-family zoning districts, to qualify for an owner-occupied permit.",
+      "section": "6.28.030.A.2.c",
+      "quote": "To qualify for an STRP—owner-occupied permit, the owner of the property shall permanently reside in the STRP or, for conforming uses in single-family and one and two-family zoning districts, the owner shall permanently reside in a residential unit on the same lot.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "ownership",
+      "requirement": "Owner must be a natural person and may not be a limited liability entity or unincorporated entity for an owner-occupied permit.",
+      "section": "6.28.030.A.2.c",
+      "quote": "The owner of the property: (1) must be a natural person or persons; (2) may not be a limited liability entity, including without limitation a corporation or limited liability company; and (3) may not be an unincorporated entity, including without limitation a partnership, joint venture, or trust.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OWN_UNIT"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "unit_cap",
+      "requirement": "Owner may not hold more than one permit per lot in single-family and two-family zoning districts.",
+      "section": "6.28.030.A.2.d",
+      "quote": "Only one permit shall be issued per lot in single-family and two-family zoning districts.",
+      "value": 1.0,
+      "unit": "units",
+      "canonical_id": "MAX_UNITS_PER_OPERATOR"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "ownership",
+      "requirement": "Owner may not divide the property ownership of two-family units; both units must be owned by the same person and one unit must be the owner's primary residence.",
+      "section": "6.28.030.A.2.e",
+      "quote": "i The property ownership of the two-family units cannot be divided.\nii The two-family units shall be owned by the same person and one of the two units shall be the primary residence of the owner.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "OWNER_MUST_OWN_UNIT"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must record an instrument with the register's office covenanting to the two-family dwelling conditions before a permit is issued.",
+      "section": "6.28.030.A.2.e",
+      "quote": "iii Prior to the issuance of a permit, an instrument shall be prepared and recorded with the register’s office covenanting that the two-family dwelling may only be used under the conditions listed above as long as the STRP—Owner-occupied permit is valid.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner must complete the permit application process within 90 calendar days of filing before the application expires.",
+      "section": "6.28.030.A.3.a",
+      "quote": "STRP permit applications shall be valid for 90 calendar days from the date filed and shall expire if the application process has not been completed within that time.",
+      "value": 90.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must verify by affidavit that all information in the permit application is true and accurate.",
+      "section": "6.28.030.A.3.b",
+      "quote": "The STRP permit application shall verify by affidavit that all of the information being provided is true and accurate and the application shall include the following information:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must designate a responsible party residing or located within 25 miles of the rental to address maintenance and safety concerns and provide their contact information.",
+      "section": "6.28.030.A.3.b.i",
+      "quote": "i The name, telephone number, address, and email address of the owner and of a person or business (“responsible party”) residing or located within 25 miles of the STRP that is responsible for addressing all maintenance and safety concerns;",
+      "value": 25.0,
+      "unit": "miles",
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "insurance",
+      "requirement": "Owner must carry homeowner's fire, hazard, and liability insurance with liability limits of at least one million dollars per occurrence.",
+      "section": "6.28.030.A.3.b.ii",
+      "quote": "ii Proof of insurance evidencing homeowner’s fire, hazard, and liability insurance. Liability coverage shall have limits of not less than one million dollars per occurrence.",
+      "value": 1000000.0,
+      "unit": "dollars",
+      "canonical_id": "INSURANCE_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must provide written notification to the owner of each adjacent property before filing the application, with proof.",
+      "section": "6.28.030.A.3.b.iii",
+      "quote": "iii Proof of written notification to the owner of each adjacent property prior to filing the application.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "owner_occupancy",
+      "requirement": "Owner must submit two current documents proving owner-occupation of the property when applying for an owner-occupied permit.",
+      "section": "6.28.030.A.3.b.iv",
+      "quote": "iv For owners applying for an owner-occupied permit, two documents giving proof of owner-occupation shall be provided. Each document must be current and show the owner’s name and address matching that of the property to be utilized for short term rental.",
+      "value": 2.0,
+      "unit": "documents",
+      "canonical_id": "OWNER_MUST_OCCUPY"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must confirm that operating the rental would not violate any HOA, condominium, co-op, lease, or other agreement governing the property.",
+      "section": "6.28.030.A.3.b.v",
+      "quote": "v A statement that the applicant has confirmed that operating the proposed STRP would not violate any homeowners association agreement or bylaws, condominium agreement, co-op agreement, lease agreement, covenants, easements, codes and restrictions or any other agreement governing and limiting the use of the proposed STRP property.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "tax",
+      "requirement": "Owner must provide proof of payment of all taxes due, including property taxes and, at renewal, all room, occupancy, and sales taxes.",
+      "section": "6.28.030.A.3.b.vi",
+      "quote": "vi Proof of payment of all taxes due, including property taxes and, for permit renewals, all applicable room, occupancy, and sales taxes required by state law or the Metropolitan Code.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LODGING_TAX"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must ensure any signage on the property complies with the sign regulations of Chapter 17.32.",
+      "section": "6.28.030.A.4",
+      "quote": "Signage. Any sign, as defined in Section 17.32.030.B of the Metropolitan Code, on a property used for an STRP shall be governed by the provision of Chapter 17.32, Sign Regulations, of the Metropolitan Code.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "NO_SIGNAGE"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must ensure occupants comply with applicable noise, public peace, and waste management regulations.",
+      "section": "6.28.030.A.5.a",
+      "quote": "All STRP occupants shall abide by all applicable noise restrictions and regulations regarding the public peace and welfare contained in the Metropolitan Code, and all applicable waste management provisions of Chapter 10.20 of the Metropolitan Code.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "NOISE_LIMITS"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must meet all applicable building and fire safety codes, including approved smoke alarms in all sleeping areas, egress rooms, and each story.",
+      "section": "6.28.030.A.5.b",
+      "quote": "The STRP shall meet all applicable requirements of the state and local building and fire safety codes, including, but not limited to, having approved smoke alarms meeting Underwriters Laboratory (UL) 217 standards installed as follows:",
+      "value": null,
+      "unit": null,
+      "canonical_id": "SAFETY_EQUIPMENT"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must provide parking as required by code and may not allow recreational vehicles, buses, or trailers to be visible on the street or property.",
+      "section": "6.28.030.A.5.c",
+      "quote": "Parking shall be provided as required by Section 17.20.030 of the Metropolitan Code. No recreational vehicles, buses, or trailers shall be visible on the street or property in conjunction with the STRP use.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner may not prepare or serve food to guests.",
+      "section": "6.28.030.A.5.d",
+      "quote": "No food shall be prepared for or served to the transient by the permit holder.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner may not rent to a principal renter under 21 years of age.",
+      "section": "6.28.030.A.5.e",
+      "quote": "The principal renter of an STRP unit shall be at least 21 years of age.",
+      "value": 21.0,
+      "unit": "years",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner may not allow more occupants than twice the number of sleeping rooms plus four, may not rent simultaneously to more than one party, and must post the occupancy maximum in the unit.",
+      "section": "6.28.030.A.5.f",
+      "quote": "The maximum number of occupants permitted on an STRP property at any one time shall not exceed more than twice the number of sleeping rooms plus four. Simultaneous rental to more than one party under separate contracts shall not be allowed. The occupancy maximum shall be conspicuously posted within the STRP unit.",
+      "value": 4.0,
+      "unit": "occupants",
+      "canonical_id": "OCCUPANCY_LIMIT"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner may not rent the unit for stays of less than twenty-four hours or more than thirty consecutive days.",
+      "section": "6.28.030.A.5.g",
+      "quote": "The STRP owner shall not receive any compensation or remuneration to permit occupancy of an STRP for a period of less than twenty-four hours. The maximum stay for any guest shall be thirty consecutive days.",
+      "value": 30.0,
+      "unit": "days",
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner must post the responsible party's name and phone number in the unit and ensure that party answers calls 24 hours a day, seven days a week during each rental period.",
+      "section": "6.28.030.A.5.h",
+      "quote": "The name and telephone number of the local responsible party shall be conspicuously posted within the STRP unit. The responsible party shall answer calls 24 hours a day, seven days a week for the duration of each short term rental period to address problems associated with the STRP.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner must renew the permit before it expires 365 days after issuance.",
+      "section": "6.28.030.A.5.i",
+      "quote": "i An STRP permit shall expire 365 days after it is issued unless it is renewed prior to its expiration.",
+      "value": 365.0,
+      "unit": "days",
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner must submit a renewal fee and an affidavit confirming all required application information and continued compliance with all applicable laws and taxes.",
+      "section": "6.28.030.A.5.i.ii",
+      "quote": "(1) The payment of a renewal fee set by the zoning administrator; and\n(2) A statement verified by affidavit that:\n(a) Includes all of the information required in an application under Section 6.28.030.A.3; and\n(b) The STRP continues to be in full compliance with all applicable laws, including the payment of all\napplicable taxes.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner with documented complaints during the most recent permit period must submit the renewal application timely with no grace period, including a verified affidavit of all required application information.",
+      "section": "6.28.030.A.5.i.iv",
+      "quote": "iv For an STRP with documented complaints to metro codes, police, or public works during the most recent permit period, no grace period shall be allowed and all permit renewal applications shall be submitted timely. The renewal application shall be submitted with a statement verified by affidavit that includes all of the information required in an application under Section 6.28.030.A.3.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_RENEWAL"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "tax",
+      "requirement": "Owner must collect and remit all applicable room, occupancy, and sales taxes.",
+      "section": "6.28.030.A.5.j",
+      "quote": "The permit holder shall be responsible for collecting and remitting all applicable room, occupancy, and sales taxes required by state law or the Metropolitan Code.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LODGING_TAX"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner may not transfer or assign the permit to another person, entity, or address, or let anyone else operate under it.",
+      "section": "6.28.030.A.5.k",
+      "quote": "An STRP permit shall not be transferred or assigned to another individual, person, entity, or address, nor shall the permit authorize any person, other than the person named therein, to operate an STRP on the property.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_NOT_TRANSFERABLE"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner of a non-owner-occupied rental must obtain an STRP permit from the department of codes administration before operating or advertising the property.",
+      "section": "6.28.030.B.2.a",
+      "quote": "No person or entity shall operate an STRP or advertise a residential property for use as an STRP without the owner of the property first having obtained an STRP permit issued by the department of codes administration in accordance with the provisions of this chapter.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "license",
+      "requirement": "Owner of a non-owner-occupied rental must display the permit number or a legible image of the permit in any online advertisement.",
+      "section": "6.28.030.B.2.b",
+      "quote": "Any advertising or description of an STRP on any internet website must: (a) prominently display the permit number for the STRP unit; or (b) include an image of the permit, or a link to an image of the permit, in which the permit number is legible.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_DISPLAYED_IN_ADVERTS"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner of a non-owner-occupied rental in single-family and one and two-family zoning districts must ensure all property improvements comply with district bulk regulations.",
+      "section": "6.28.030.B.2.c",
+      "quote": "In single-family and one and two-family zoning districts, all property improvements shall comply with the Chapter 17.12 (District Bulk Regulations) for single-family or two-family uses, depending on the number of units on the property.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner of a non-owner-occupied rental must designate a responsible party residing or located within 25 miles of the rental and provide their contact information.",
+      "section": "6.28.030.B.3.b.i",
+      "quote": "i The name, telephone number, address, and email address of the owner and of a person or business (“responsible party”) residing or located within 25 miles of the STRP that is responsible for addressing all maintenance and safety concerns;",
+      "value": 25.0,
+      "unit": "miles",
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "insurance",
+      "requirement": "Owner of a non-owner-occupied rental must carry homeowner's fire, hazard, and liability insurance with liability limits of at least one million dollars per occurrence.",
+      "section": "6.28.030.B.3.b.ii",
+      "quote": "ii Proof of insurance evidencing homeowner’s fire, hazard, and liability insurance. Liability coverage shall have limits of not less than one million dollars per occurrence.",
+      "value": 1000000.0,
+      "unit": "dollars",
+      "canonical_id": "INSURANCE_REQUIRED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "other",
+      "requirement": "Owner of a non-owner-occupied rental must provide written notification to the owner of each adjacent property before filing the application, with proof.",
+      "section": "6.28.030.B.3.b.iii",
+      "quote": "iii Proof of written notification to the owner of each adjacent property prior to filing the application.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Nashville, Tennessee",
+      "kind": "tax",
+      "requirement": "Owner of a non-owner-occupied rental must provide proof of payment of all taxes due, including property taxes and, at renewal, room, occupancy, and sales taxes.",
+      "section": "6.28.030.B.3.b.v",
+      "quote": "v Proof of payment of all taxes due, including property taxes and, for permit renewals, all applicable room, occupancy, and sales taxes required by state law or the Metropolitan Code.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LODGING_TAX"
+    }
+  ]
+}

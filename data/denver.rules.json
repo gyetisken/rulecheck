@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "city": "Denver, Colorado",
+      "kind": "license",
+      "requirement": "Owner must hold a valid short-term rental license issued by the Department and comply with all license conditions, rules, and applicable city and state laws.",
+      "section": "Section 2",
+      "quote": "All Licensees shall comply with these rules and regulations, in addition to any condition placed on the license, stipulation, and any other city or state law relating to and affecting the licensing and operation of Short-Term Rentals, including but not limited to the Denver Zoning Code, section 11.8.10, as amended.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "LICENSE_REQUIRED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "insurance",
+      "requirement": "Owner must notify their insurance company that the property will be used as a short-term rental before processing any short-term rental transaction.",
+      "section": "3.1",
+      "quote": "A Licensee shall inform his or her Insurance Company that the property covered by\nthe Insurance Company will be used as a Short-Term Rental before any Short-Term\nRental Transaction is processed, regardless of whether the Licensee obtains liability\ninsurance for the Short-Term Rental through that Insurance Company.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "INSURANCE_REQUIRED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "insurance",
+      "requirement": "Owner must submit a signed affidavit verifying the insurance company notification during the application process.",
+      "section": "3.1",
+      "quote": "The Licensee\nshall verify compliance with this notification requirement by executing and\nsubmitting a form affidavit provided by the Department during the application\nprocess.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "INSURANCE_REQUIRED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "insurance",
+      "requirement": "Owner must maintain liability insurance of at least $1,000,000 in the aggregate for the term of the license, or use a hosting platform providing equal or greater coverage.",
+      "section": "3.2",
+      "quote": "A Licensee shall maintain liability insurance to cover use of the Short-Term Rental in\nan amount determined appropriate by the Insurance Company insuring such Short-\nTerm Rental, but in any case no amount of less than one million dollars ($1,000,000)\nin the aggregate.",
+      "value": 1000000.0,
+      "unit": "dollars",
+      "canonical_id": "INSURANCE_REQUIRED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "other",
+      "requirement": "Owner must notify the home owners association of the intended short-term rental use before obtaining a license, if the property is in an HOA.",
+      "section": "3.3",
+      "quote": "If the property being used as a Short-Term Rental is included in a Home Owners\nAssociation, the applicant for a Short-Term Rental license shall inform the Home\nOwners Association that the applicant intends to use the property as a Short-Term\nRental prior to obtaining a Short-Term Rental license.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "other",
+      "requirement": "Owner must submit a signed affidavit verifying the home owners association notification during the application process.",
+      "section": "3.3",
+      "quote": "The Licensee shall verify\ncompliance with this notification requirement by executing and submitting a form\naffidavit provided by the Department during the application process.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "UNMAPPED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "insurance",
+      "requirement": "Owner must continuously maintain the required insurance policy for the duration of the license.",
+      "section": "3.4",
+      "quote": "A Licensee shall maintain an insurance policy as described in section 1.2.",
+      "value": null,
+      "unit": null,
+      "canonical_id": "INSURANCE_REQUIRED"
+    },
+    {
+      "city": "Denver, Colorado",
+      "kind": "other",
+      "requirement": "Owner must report any change to the local responsible party or their contact information to the Department within 30 days of the change.",
+      "section": "6.1",
+      "quote": "The Licensee shall submit any such changes to the Department within 30 days of the\nchange.",
+      "value": 30.0,
+      "unit": "days",
+      "canonical_id": "LOCAL_CONTACT_REQUIRED"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "city": "Austin",
+  "has_license": false,
+  "owner_occupies": true,
+  "units_operated": 1,
+  "feet_to_nearest_rental": 1400,
+  "has_insurance": true,
+  "registered_for_tax": null,
+  "owner_owns": true
+}

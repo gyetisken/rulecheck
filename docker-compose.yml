@@ -1,0 +1,9 @@
+services:
+  rulecheck:
+    build: .
+    ports:
+      - "8000:8000"
+    # Serving needs no key: the extracted rules are checked in. A key is only
+    # required to rebuild them, which is a separate command.
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
