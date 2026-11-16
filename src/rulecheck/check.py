@@ -6,7 +6,7 @@ comparison belongs in code: it is faster, it costs nothing, and it gives the
 same answer every time.
 """
 
-from .models import Finding, Property, Rule, RuleSet, Status
+from .models import Blocked, Finding, Property, Rule, RuleSet, Status
 
 # A rule phrased as a prohibition sets a ceiling. One phrased as an obligation
 # sets a floor. The extraction prompt asks for "Owner must" or "Owner may not",
@@ -20,7 +20,12 @@ def _is_prohibition(rule: Rule) -> bool:
 
 def _boolean(rule: Rule, held: bool | None, name: str) -> Finding:
     if held is None:
-        return Finding(rule=rule, status=Status.UNKNOWN, reason=f"{name} not answered")
+        return Finding(
+            rule=rule,
+            status=Status.UNKNOWN,
+            reason=f"{name} not answered",
+            blocked_on=Blocked.ANSWER,
+        )
     if held:
         return Finding(rule=rule, status=Status.SATISFIED, reason=f"{name} is true")
     return Finding(rule=rule, status=Status.VIOLATED, reason=f"{name} is false")
@@ -32,10 +37,14 @@ def _unit_cap(rule: Rule, prop: Property) -> Finding:
             rule=rule,
             status=Status.UNKNOWN,
             reason=f"cap is expressed in {rule.unit!r}, which this checker cannot apply",
+            blocked_on=Blocked.HUMAN,
         )
     if prop.units_operated is None:
         return Finding(
-            rule=rule, status=Status.UNKNOWN, reason="units operated not answered"
+            rule=rule,
+            status=Status.UNKNOWN,
+            reason="units operated not answered",
+            blocked_on=Blocked.ANSWER,
         )
     if prop.units_operated <= rule.value:
         return Finding(
@@ -53,13 +62,17 @@ def _unit_cap(rule: Rule, prop: Property) -> Finding:
 def _distance(rule: Rule, prop: Property) -> Finding:
     if rule.value is None or rule.unit != "feet":
         return Finding(
-            rule=rule, status=Status.UNKNOWN, reason="no distance in feet stated"
+            rule=rule,
+            status=Status.UNKNOWN,
+            reason="no distance in feet stated",
+            blocked_on=Blocked.HUMAN,
         )
     if prop.feet_to_nearest_rental is None:
         return Finding(
             rule=rule,
             status=Status.UNKNOWN,
             reason="distance to nearest rental not answered",
+            blocked_on=Blocked.ANSWER,
         )
     if prop.feet_to_nearest_rental >= rule.value:
         return Finding(
@@ -93,6 +106,7 @@ def check_rule(rule: Rule, prop: Property) -> Finding:
         rule=rule,
         status=Status.UNKNOWN,
         reason="no automatic check for this kind of rule, needs a human",
+        blocked_on=Blocked.HUMAN,
     )
 
 

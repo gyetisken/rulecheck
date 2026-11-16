@@ -66,7 +66,21 @@ class Status(str, Enum):
     UNKNOWN = "unknown"
 
 
+class Blocked(str, Enum):
+    """Why an unknown is unknown.
+
+    Worth separating. One of these the user can clear by answering a question;
+    the other no answer will ever settle, because the rule is not the kind of
+    thing a program decides. Showing them together reads as "you forgot to fill
+    the form in" when mostly the form was never going to help.
+    """
+
+    ANSWER = "answer"
+    HUMAN = "human"
+
+
 class Finding(BaseModel):
     rule: Rule
     status: Status
     reason: str
+    blocked_on: Blocked | None = None

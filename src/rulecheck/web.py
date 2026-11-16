@@ -15,7 +15,7 @@ from fastapi.responses import HTMLResponse
 from .canonical import CANONICAL
 from .check import check
 from .compare import load, matrix, unmapped
-from .models import Finding, Property, RuleSet, Status
+from .models import Blocked, Finding, Property, RuleSet, Status
 
 app = FastAPI(title="rulecheck")
 
@@ -271,7 +271,7 @@ CAUSES = {
         "unit_cap",
     ): "This city measures its limit in a way the checker cannot apply",
     ("unknown", "distance"): "You did not give a distance to your nearest rental",
-    ("unknown", "other"): "These have to be read by a person",
+    ("unknown", "other"): "Noise, upkeep and local contact rules",
 }
 
 
@@ -284,23 +284,31 @@ def _cause(finding: Finding) -> str:
     )
 
 
-def _verdict(counts: dict, city: str) -> str:
-    bad, idk = counts[Status.VIOLATED], counts[Status.UNKNOWN]
+def _verdict(findings: list[Finding], city: str) -> str:
+    bad = sum(1 for f in findings if f.status is Status.VIOLATED)
+    ask = sum(1 for f in findings if f.blocked_on is Blocked.ANSWER)
+    human = sum(1 for f in findings if f.blocked_on is Blocked.HUMAN)
+
     if bad:
-        return (
-            f"<p class='verdict'><b>You are not clear to rent in {city} yet.</b> "
-            f"{bad} of the requirements in the ordinance are not met, and {idk} more "
-            "cannot be settled without a person.</p>"
+        head = f"You are not clear to rent in {city} yet."
+        body = f" {bad} requirement{'s are' if bad != 1 else ' is'} not met."
+    elif ask or human:
+        head = f"Nothing you told us breaks a rule in {city}."
+        body = ""
+    else:
+        head = f"Nothing to check in {city} yet."
+        body = ""
+
+    if ask:
+        body += (
+            f" {ask} more depend{'' if ask != 1 else 's'} on a question you left blank."
         )
-    if counts[Status.SATISFIED]:
-        return (
-            f"<p class='verdict'><b>Nothing you told us breaks a rule in {city}.</b> "
-            f"{idk} requirements still need a person to read them.</p>"
+    if human:
+        body += (
+            f" A further {human} cannot be decided by any program and need "
+            "a person to read them."
         )
-    return (
-        f"<p class='verdict'><b>Not enough answers yet.</b> Every one of the "
-        f"{idk} requirements in {city} is waiting on something you have not said.</p>"
-    )
+    return f"<p class='verdict'><b>{head}</b>{body}</p>"
 
 
 def _block(title: str, items: list[Finding], status: Status) -> str:
@@ -326,28 +334,49 @@ def _block(title: str, items: list[Finding], status: Status) -> str:
     )
 
 
-def _render(findings: list[Finding], city: str) -> str:
-    counts = {s: sum(1 for f in findings if f.status is s) for s in Status}
-    out = _verdict(counts, city)
+def _section(heading: str, note: str, group: list[Finding], status: Status) -> str:
+    if not group:
+        return ""
+    causes: dict[str, list[Finding]] = {}
+    for f in group:
+        causes.setdefault(_cause(f), []).append(f)
+    blocks = "".join(
+        _block(title, items, status)
+        for title, items in sorted(causes.items(), key=lambda kv: -len(kv[1]))
+    )
+    return f"<h2>{heading}</h2><p class='lead'>{note}</p>{blocks}"
 
-    sections = [
-        (Status.VIOLATED, "What is missing"),
-        (Status.UNKNOWN, "What nobody has answered yet"),
-        (Status.SATISFIED, "What you already meet"),
-    ]
-    for status, heading in sections:
-        group = [f for f in findings if f.status is status]
-        if not group:
-            continue
-        causes: dict[str, list[Finding]] = {}
-        for f in group:
-            causes.setdefault(_cause(f), []).append(f)
-        out += f"<h2>{heading}</h2>"
-        out += "".join(
-            _block(title, items, status)
-            for title, items in sorted(causes.items(), key=lambda kv: -len(kv[1]))
+
+def _render(findings: list[Finding], city: str) -> str:
+    return (
+        _verdict(findings, city)
+        + _section(
+            "Missing",
+            "The ordinance requires these and your answers say you do not have them.",
+            [f for f in findings if f.status is Status.VIOLATED],
+            Status.VIOLATED,
         )
-    return out
+        + _section(
+            "Waiting on you",
+            "Answer the question above and these settle themselves.",
+            [f for f in findings if f.blocked_on is Blocked.ANSWER],
+            Status.UNKNOWN,
+        )
+        + _section(
+            "Needs a person",
+            "No answer you could give would settle these. Quiet hours, habitability "
+            "and how fast a local contact responds are judgements, not comparisons, "
+            "so the program hands them over instead of guessing.",
+            [f for f in findings if f.blocked_on is Blocked.HUMAN],
+            Status.UNKNOWN,
+        )
+        + _section(
+            "Already met",
+            "Your answers satisfy these.",
+            [f for f in findings if f.status is Status.SATISFIED],
+            Status.SATISFIED,
+        )
+    )
 
 
 @app.get("/compare", response_class=HTMLResponse)
